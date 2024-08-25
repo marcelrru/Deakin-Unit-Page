@@ -1,19 +1,111 @@
-
-
 h1 {
-  font-size: 40px;
-  font-family: Arial
+	font-size: 40px;
+	font-family: Arial;
 }
 h2 {
-  font-size: 25px;
-  font-family: Arial
+	font-size: 25px;
+	font-family: Arial;
 }
 h3 {
-  font-family: Arial
+	font-family: Arial;
 }
 p {
-  font-size: 14px;
-  font-family: Arial
+	font-size: 14px;
+	font-family: Arial;
 }
 
+/* General Styles */
+body {
+	margin: 0;
+	font-family: "Roboto", sans-serif;
+	background-color: #f4f4f4;
+	height: 100vh;
+	box-sizing: border-box;
+}
 
+/* Header Styles */
+header {
+	background-color: #333;
+	padding: 20px 0;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.container {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 0 20px;
+}
+
+.logo img {
+	max-width: 150px;
+}
+
+nav ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	display: flex;
+}
+
+nav ul li {
+	margin-left: 20px;
+}
+
+nav ul li a {
+	text-decoration: none;
+	color: #fff;
+	font-size: 16px;
+	font-weight: 500;
+	padding: 8px 12px;
+	transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+	color: #1abc9c;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+	.container {
+		flex-direction: column;
+	}
+
+	nav ul {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	nav ul li {
+		margin: 10px 0;
+	}
+}
+
+main {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 60px;
+}
+
+.title {
+}
+
+.team-members {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.team-members ul {
+	display: flex;
+	list-style-type: none;
+	gap: 30px;
+	padding: 0;
+}
+
+table caption {
+	padding: 0.5em 0;
+}
